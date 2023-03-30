@@ -1,0 +1,25 @@
+version: '3.9'
+
+services:
+  database:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: Password10
+
+  bot:
+    depends_on:
+      - database
+    build:
+        dockerfile: Dockerfile
+        context: docker-compose/bot/
+    environment:
+      CREATE_TABLE: "yes"
+      DB_SWITCH: "on"
+      TOKEN: 
+      HOST: database
+      PORT: 5432
+      USER: postgres
+      PASSWORD: Password10
+      DBNAME: postgres
+      SSLMODE: disable
