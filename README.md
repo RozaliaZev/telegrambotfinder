@@ -1,12 +1,15 @@
 # Телеграм бот, сообщающий погоду в интересующем городе
 
-Пользователь вводит название города и получает информацию о температуре, влажности и скорости ветра на данный момент.
+Вводим название города и получаем информацию о температуре, влажности и скорости ветра на данный момент.
 
-![alt text](https://sun9-80.userapi.com/impg/WvyfI8waKXOpfncPZyRMIR6hFA6b7XRVDtDVSw/iTIT9-ZgxkM.jpg?size=692x172&quality=96&sign=af2792a33a2ba85c0be3e0235a17d593&type=album)
+Можно воспользоваться меню и не водить название города.
 
+![alt text](https://sun9-15.userapi.com/impg/lJ_P1wuttakBTyxRIoLeD-j5yY1AiBEER3XEzw/ORkiRh-Rgqs.jpg?size=628x738&quality=95&sign=f9c65b936ebfd9674df11b5f34dc86af&type=album)
 
-Можно запросить статистику своих запросов:
+Нажав кнопку "назад", возвращаемся в главное меню и запрашиваем статистику по нашим запросам:
+
+Или используем команду
 ```sh
 /statistics
 ```
-![alt text](https://sun9-26.userapi.com/impg/wXOUX_E0m_o6vLZhuMRAwTASpkTX_jEGZ1A-dA/VVt4nq9MlFM.jpg?size=680x733&quality=96&sign=ceb010d7033f3ba5c3a81586c40cf2d1&type=album)
+![alt text](https://sun9-43.userapi.com/impg/dA58ICefCzHAE4lGWuxpuPwIgTktsUinZNUNHg/dIleEvB04QI.jpg?size=634x1002&quality=95&sign=acf8f80e2761b3162d8db92be8eeb8ab&type=album)
