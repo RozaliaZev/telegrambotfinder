@@ -4,7 +4,7 @@
 
 Можно воспользоваться меню и не водить название города.
 
-![alt text](https://sun9-15.userapi.com/impg/lJ_P1wuttakBTyxRIoLeD-j5yY1AiBEER3XEzw/ORkiRh-Rgqs.jpg?size=628x738&quality=95&sign=f9c65b936ebfd9674df11b5f34dc86af&type=album)
+![alt text](https://sun9-80.userapi.com/impg/8DVVG-IGg2oKha6pDdyM3xZ8iCGwbvRM22AdkQ/ue26sJSxjQM.jpg?size=626x998&quality=95&sign=b94b3faa598332028b3a19d810f6d1ed&type=album)
 
 Нажав кнопку "назад", возвращаемся в главное меню и запрашиваем статистику по нашим запросам:
 
