@@ -13,3 +13,6 @@
 /statistics
 ```
 ![alt text](https://sun9-43.userapi.com/impg/dA58ICefCzHAE4lGWuxpuPwIgTktsUinZNUNHg/dIleEvB04QI.jpg?size=634x1002&quality=95&sign=acf8f80e2761b3162d8db92be8eeb8ab&type=album)
+
+UPD: больше кнопок меню
+![alt text](https://sun9-80.userapi.com/impg/jgtQ0HtmxV5STsYKv84oGV-lvpOSEpeKCGBkwg/McT42ogLsbo.jpg?size=1476x303&quality=95&sign=59ce5f656fcdfd75ad4523c6d6e753ca&type=album)
