@@ -7,17 +7,27 @@ import (
 	"log"
 	"os"
 	"reflect"
-	//"time"
+	"time"
     "strings"
 	"github.com/Syfaro/telegram-bot-api"
 )
+
 
 var replyMarkup = tgbotapi.NewReplyKeyboard(
     tgbotapi.NewKeyboardButtonRow(
         tgbotapi.NewKeyboardButton("Статистика"),
     ),
     tgbotapi.NewKeyboardButtonRow(
-        tgbotapi.NewKeyboardButton("Выбор города"),
+        tgbotapi.NewKeyboardButton("Выбор города в России"),
+    ),
+	tgbotapi.NewKeyboardButtonRow(
+        tgbotapi.NewKeyboardButton("Выбор города в Испании"),
+    ),
+	tgbotapi.NewKeyboardButtonRow(
+        tgbotapi.NewKeyboardButton("Выбор города в США"),
+    ),
+	tgbotapi.NewKeyboardButtonRow(
+        tgbotapi.NewKeyboardButton("Выбор города в Германии"),
     ),
 )
 
@@ -86,7 +96,7 @@ func telegramBot() {
 				}
 
 
-            case "Выбор города":
+            case "Выбор города в России":
                 
                 cityMarkup := tgbotapi.NewReplyKeyboard(
                     tgbotapi.NewKeyboardButtonRow(
@@ -94,6 +104,63 @@ func telegramBot() {
                         tgbotapi.NewKeyboardButton("Саратов"),
                         tgbotapi.NewKeyboardButton("Санкт-Петербург"),
                         tgbotapi.NewKeyboardButton("Казань"),
+                    ),
+                    tgbotapi.NewKeyboardButtonRow(
+                        tgbotapi.NewKeyboardButton("назад"),
+                    ),
+                )
+    
+                cityMsg := tgbotapi.NewMessage(update.Message.Chat.ID, "Выберете город")
+                cityMsg.ReplyMarkup = cityMarkup
+    
+                bot.Send(cityMsg)
+
+			case "Выбор города в Испании":
+                
+                cityMarkup := tgbotapi.NewReplyKeyboard(
+                    tgbotapi.NewKeyboardButtonRow(
+                        tgbotapi.NewKeyboardButton("Мадрид"),
+                        tgbotapi.NewKeyboardButton("Барселона"),
+                        tgbotapi.NewKeyboardButton("Валенсия"),
+                        tgbotapi.NewKeyboardButton("Гранада"),
+                    ),
+                    tgbotapi.NewKeyboardButtonRow(
+                        tgbotapi.NewKeyboardButton("назад"),
+                    ),
+                )
+    
+                cityMsg := tgbotapi.NewMessage(update.Message.Chat.ID, "Выберете город")
+                cityMsg.ReplyMarkup = cityMarkup
+    
+                bot.Send(cityMsg)
+
+			case "Выбор города в США":
+                
+                cityMarkup := tgbotapi.NewReplyKeyboard(
+                    tgbotapi.NewKeyboardButtonRow(
+                        tgbotapi.NewKeyboardButton("Нью‑Йорк"),
+                        tgbotapi.NewKeyboardButton("Лос‑Анджелес"),
+                        tgbotapi.NewKeyboardButton("Чикаго"),
+                        tgbotapi.NewKeyboardButton("Майами"),
+                    ),
+                    tgbotapi.NewKeyboardButtonRow(
+                        tgbotapi.NewKeyboardButton("назад"),
+                    ),
+                )
+    
+                cityMsg := tgbotapi.NewMessage(update.Message.Chat.ID, "Выберете город")
+                cityMsg.ReplyMarkup = cityMarkup
+    
+                bot.Send(cityMsg)
+
+			case "Выбор города в Германии":
+                
+                cityMarkup := tgbotapi.NewReplyKeyboard(
+                    tgbotapi.NewKeyboardButtonRow(
+                        tgbotapi.NewKeyboardButton("Берлин"),
+                        tgbotapi.NewKeyboardButton("Гамбург"),
+                        tgbotapi.NewKeyboardButton("Мюнхен"),
+                        tgbotapi.NewKeyboardButton("Лейпциг"),
                     ),
                     tgbotapi.NewKeyboardButtonRow(
                         tgbotapi.NewKeyboardButton("назад"),
@@ -153,7 +220,7 @@ func telegramBot() {
 
 func main() {
 
-	//time.Sleep(1 * time.Minute)
+	time.Sleep(1 * time.Minute)
 
 	if os.Getenv("CREATE_TABLE") == "yes" {
 
@@ -165,7 +232,7 @@ func main() {
 		}
 	}
 
-	// time.Sleep(1 * time.Minute)
+	time.Sleep(1 * time.Minute)
 	log.Println("start work")
 	telegramBot()
 }
